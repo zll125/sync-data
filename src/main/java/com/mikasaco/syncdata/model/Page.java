@@ -6,7 +6,6 @@ import java.util.List;
 /**
  * 需要分页的请求 封装类
  *
- * @author wt 2018/7/30 10:57 AM
  */
 public class Page<T> implements Serializable {
 

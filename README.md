@@ -38,7 +38,17 @@ insert
 
 
 
+update
 
+```json
+{"data":[{"id":"1","role_name":"系统管理员","station_id":"2"}],"database":"canal","es":1575878848000,"id":22,"isDdl":false,"mysqlType":{"id":"int(11)","role_name":"varchar(10)","station_id":"int(11)"},"old":[{"station_id":"1"}],"pkNames":["id"],"sql":"","sqlType":{"id":4,"role_name":12,"station_id":4},"table":"role","ts":1575878848780,"type":"UPDATE"}
+```
+
+delete
+
+```json
+{"data":[{"id":"1","role_name":"系统管理员","station_id":"2"}],"database":"canal","es":1575878877000,"id":23,"isDdl":false,"mysqlType":{"id":"int(11)","role_name":"varchar(10)","station_id":"int(11)"},"old":null,"pkNames":["id"],"sql":"","sqlType":{"id":4,"role_name":12,"station_id":4},"table":"role","ts":1575878877677,"type":"DELETE"}
+```
 
 
 

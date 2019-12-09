@@ -106,7 +106,7 @@ public class EsClient<T, E> {
     public void addDocByJson(String indexName, String id, String jsonString) throws Exception {
 
         if (!checkIndexExists(indexName)) {
-
+//            throw new Exception("索引不存在");
         }
         IndexRequest request = new IndexRequest(indexName).id(id).source(jsonString, XContentType.JSON);
         // request的opType默认是INDEX(传入相同id会覆盖原document，CREATE则会将旧的删除)
@@ -229,12 +229,11 @@ public class EsClient<T, E> {
      * 删除文档
      *
      * @param index
-     * @param type
      * @param id
      * @throws IOException
      */
-    public void deleteDocument(String index, String type, String id) throws IOException {
-        DeleteRequest request = new DeleteRequest(index, type, id);
+    public void deleteDocument(String index, String id) throws IOException {
+        DeleteRequest request = new DeleteRequest(index, id);
         DeleteResponse response = null;
         try {
             response = client.delete(request, RequestOptions.DEFAULT);
