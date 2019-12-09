@@ -1,4 +1,4 @@
-package com.mikasaco.syncdata.entity;
+package com.mikasaco.syncdata.model;
 
 import lombok.Data;
 
